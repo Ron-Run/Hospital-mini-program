@@ -1,0 +1,21 @@
+<searchBox></searchBox>
+<tab tabSet="{{tabList}}" bind:getIndex="getValue">
+    <block wx:if="{{tabList[0].isActive}}"> 
+        <view class="content"
+        wx:for="{{dataList}}"
+        wx:key="cat_id"
+        >
+            <navigator url="../../pages/good-detail/good-detail?goods_id={{ item.goods_id }}">
+                <view class="leftImg">
+                    <image mode="widthFix" src="{{ item.goods_small_logo?item.goods_small_logo:'http://image2.suning.cn/uimg/b2c/newcatentries/0000000000-000000000721208036_1_400x400.jpg' }}" />
+                </view>
+                <view class="rightInfo">
+                    <view class="title">{{item.goods_name}}</view>
+                    <view class="price">￥{{ item.goods_price }}</view>
+                </view>
+            </navigator>
+        </view>
+    </block>
+    <block wx:elif="{{tabList[1].isActive}}">123</block>
+    <block wx:else="{{tabList[2].isActive}}">kkk</block>
+</tab>

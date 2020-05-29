@@ -1,0 +1,14 @@
+/* components/search-box/searchBox.wxss */
+
+.wrap {
+    padding: 10rpx;
+    background-color: #f95450;
+}
+
+.search {
+    height: 45rpx;
+    color: rgb(143, 143, 143);
+    text-align: center;
+    background-color: #fff;
+    border-radius: 10rpx;
+}

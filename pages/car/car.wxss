@@ -1,0 +1,141 @@
+/* pages/car/car.wxss */
+page {
+  padding-bottom: 90rpx;
+}
+.btn {
+  margin-top: 10rpx;
+}
+.btn button {
+  width: 80%;
+}
+.userInfo {
+  border-top: 1px solid salmon;
+  display: flex;
+  color: #333;
+  padding: 20rpx;
+}
+.userInfo .leftInfo {
+  flex: 5;
+}
+.userInfo .leftInfo .address {
+  width: 520rpx;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.userInfo .rightInfo {
+  flex: 2;
+  text-align: right;
+}
+.buycar {
+  padding: 20rpx;
+  border-bottom: 1px solid #f09f9f;
+  border-top: 1px solid #f09f9f;
+  margin-top: 20rpx;
+  font-size: 30rpx;
+}
+.car_null {
+  display: flex;
+  justify-content: center;
+}
+.goods_info {
+  display: flex;
+  border-bottom: 1px solid #ccc;
+}
+.goods_info .check {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_info .good_img {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_info .good_img image {
+  width: 80%;
+}
+.goods_info .content {
+  padding: 10rpx 6rpx;
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.goods_info .content .good_name {
+  font-size: 24rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.goods_info .content .price_num {
+  margin-top: 30rpx;
+  display: flex;
+  justify-content: space-between;
+}
+.goods_info .content .price_num .price {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 30rpx;
+  font-weight: 500;
+  color: var(--themeColor);
+}
+.goods_info .content .price_num .num_wrap {
+  display: flex;
+}
+.goods_info .content .price_num .num_wrap .dec,
+.goods_info .content .price_num .num_wrap .inc {
+  border: 1px solid #ccc;
+  width: 50rpx;
+  height: 50rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.goods_info .content .price_num .num_wrap .num {
+  margin: 0 20rpx;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot_tool {
+  background-color: #fff;
+  border-top: 1px solid #ccc;
+  position: fixed;
+  width: 100%;
+  height: 90rpx;
+  bottom: 0;
+  left: 0;
+  display: flex;
+}
+.foot_tool .check_all {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.foot_tool .total_price {
+  padding-right: 10rpx;
+  text-align: right;
+  flex: 5;
+  font-size: 24rpx;
+}
+.foot_tool .total_price .pay_num .total_pay {
+  font-size: 30rpx;
+  color: var(--themeColor);
+  font-weight: 600;
+}
+.foot_tool .pay {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9544e;
+  color: #fff;
+  font-weight: 600;
+  font-size: 32rpx;
+}

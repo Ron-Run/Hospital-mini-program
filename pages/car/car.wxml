@@ -1,0 +1,63 @@
+<view class="shouhuo">
+    <view class="btn" wx:if="{{!address.userName}}">
+        <button type="primary" plain="{{true}}" bindtap="addAdress">添加收货地址</button>
+    </view>
+    <view class="userInfo" wx:else>
+        <view class="leftInfo">
+            <view class="name">收货人：{{address.userName}}</view>
+            <view class="address">{{address.all}}</view>
+        </view>
+        <view class="rightInfo">{{address.telNumber}}</view>
+    </view>
+</view>
+<view class="buycar">
+    <view class="title">购物车</view>
+</view>
+<block wx:if="{{car.length!==0}}">
+    <view class="goods_info" wx:for="{{car}}" wx:key="goods_id">
+        <view class="check">
+            <checkbox-group bindchange="goodsChange" data-id="{{ item.goods_id }}">
+                <checkbox checked="{{item.checked}}" />
+            </checkbox-group>
+        </view>
+        <view class="good_img">
+            <image mode="widthFix" src="{{ item.goods_big_logo?item.goods_big_logo:'http://image1.suning.cn/uimg/b2c/newcatentries/0000000000-000000000601395527_1_800x800.jpg' }}" />
+        </view>
+        <view class="content">
+            <view class="good_name">{{ item.goods_name }}</view>
+            <view class="price_num">
+                <view class="price">￥{{ item.goods_price }}</view>
+                <view class="num_wrap">
+                    <view class="dec" bindtap="numChange" data-edit="{{ -1 }}" data-id="{{ item.goods_id }}">
+                        -
+                    </view>
+                    <view class="num">{{ item.num }}</view>
+                    <view class="inc" bindtap="numChange" data-edit="{{ 1 }}" data-id="{{ item.goods_id }}">
+                        +
+                    </view>
+                </view>
+            </view>
+        </view>
+    </view>
+</block>
+<block wx:else>
+    <view class="car_null">
+        <image mode="aspectFit" src="https://timgsa.baidu.com/timg?image&quality=80&size=b9999_10000&sec=1583388874321&di=321753d48b268a79455efa1ba64bf0c7&imgtype=0&src=http%3A%2F%2Fhbimg.b0.upaiyun.com%2Fe1b1467beea0a9c7d6a56b32bac6d7e5dcd914f7c3e6-YTwUd6_fw658" />
+    </view>
+</block>
+<view class="foot_tool">
+    <view class="check_all">
+        <checkbox-group bindchange="allCheckedChange">
+            <checkbox checked="{{allChecked}}" />
+            全选
+        </checkbox-group>
+    </view>
+    <view class="total_price">
+        <view class="pay_num">
+            合计
+            <text class="total_pay">￥{{ totalPrice }}</text>
+        </view>
+        <view class="transport">包含运费</view>
+    </view>
+    <view class="pay" bindtap="toPay">结算（{{ totalNum }}）</view>
+</view>

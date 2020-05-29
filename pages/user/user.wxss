@@ -1,0 +1,41 @@
+.img_wrap .pic_bg {
+  height: 45vm;
+  position: relative;
+}
+.img_wrap .pic_bg .bgimg image {
+  width: 100%;
+  filter: blur(5px);
+}
+.img_wrap .pic_bg .smallpic {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  top: 30%;
+  text-align: center;
+}
+.img_wrap .pic_bg .smallpic .img image {
+  width: 150rpx;
+  height: 150rpx;
+  border-radius: 50%;
+}
+.img_wrap .pic_bg .smallpic .name {
+  color: #fff;
+}
+.img_wrap .btn {
+  height: 45vm;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20rpx;
+  background-color: var(--themeColor);
+}
+.img_wrap .btn navigator {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 300rpx;
+  height: 100rpx;
+  border: 1px solid lightblue;
+}

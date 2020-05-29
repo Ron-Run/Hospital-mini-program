@@ -1,0 +1,34 @@
+/* pages/good-list/good-list.wxss */
+.content navigator {
+  margin: 25rpx 0;
+  display: flex;
+  border-bottom: 2rpx solid #ccc;
+}
+.content navigator .leftImg {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content navigator .leftImg image {
+  width: 80%;
+}
+.content navigator .rightInfo {
+  flex: 5;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+.content navigator .rightInfo .title {
+  color: #333;
+  font-size: 26rpx;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.content navigator .rightInfo .price {
+  color: salmon;
+  font-size: 40rpx;
+  font-style: italic;
+}

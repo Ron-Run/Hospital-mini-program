@@ -1,0 +1,141 @@
+/* pages/good-detail/good-detail.wxss */
+@font-face {
+  font-family: "iconfont";
+  src: url('//at.alicdn.com/t/font_1662357_p4yoakpvlu.eot?t=1582880850246');
+  /* IE9 */
+  src: url('//at.alicdn.com/t/font_1662357_p4yoakpvlu.eot?t=1582880850246#iefix') format('embedded-opentype'), /* IE6-IE8 */ url('data:application/x-font-woff2;charset=utf-8;base64,d09GMgABAAAAAAm0AAsAAAAAETQAAAlkAAEAAAAAAAAAAAAAAAAAAAAAAAAAAAAAHEIGVgCDcAqUMJAgATYCJAMoCxYABCAFhG0HgQ0bQw4jESac1EP2Fwm2Y7Q1rJkxjP3dncNEERSFRTiTD0+nvn93wV2EQldzQrp2UjqxxpxBzqAM7aB2cjpAGYALANiGIGTtDrmlkPiROFqTiE4dRYQ7KiZTHda7FXlJ/Hkjav8/1RxZW79a0xC1Qq8wjzLjE1/yB3vwtMfT/7+1Vu8O1+rSy8z6n9k91CRthkSohCRuUSzxiBA9hI7FcsYskN55xPVXdgcCgIMnwkASk9p2hRQMdELQICczfQCkiVgwFXYEUr24YFUGZBZEkFKTqVoAM72PJ28QQ6QABRENfdGOaS0Go6mDOAy0RbCgtxOPccMlA9CmAmgAYQAYTSkpjMoDKPlxoMFVZ9AcgNSYmgIcEgfrMAjCoHzAbyVZCj1fGqDBQAQJpGBBQYx/HogYOpXDaHgZCziIFQg04KACgQEcdCCIAAcTCBLAIQoEKeAQs0PIErBXI7MgqJIN4C+Vcs4qegAxAN0JYLyhK4ked1HJUnBBUxoiKOoaglje1EXuR+ShKsIaTbR8sJyRyxXQBE8VTtRqTiZ3UyhIgxsjCpaVy4uJbEPltgqrA4qlpTErIxMnVQ4CHAupYZthKGAGGuENqCniLKYZIxHVInH2ivKabIez3so894ccq/N/ofz+4CGeEVGU1nglxZDv2jf8hbJwcmSubsJd0vl13XQz7MyQz9q3EyTVmcTpbudSPKvlSEZdOI/TmlNQJGPk+6arpgSBK4Ge56rKrguPbZzAeS/F9x/hOiTHpuaGFp9EZle3U39Ric6TWQmet1OdHax8PNwxc7XC+wuD/4r/D7l/HqFIHaC1dF1ZLCnmhVMMY9JTJVMWNtBGtVJz4tC0hgA23WksgTE4aITOgS3jY8lPngdhDrDysPmaoFi2EWJlStdZBZtRwQo2OpEmkzdZWWdYuxLnZWPGbVhwWf1uWTy7yLKIoRpMObHoQs0EZVinKLXR1vj8aK6+3M5IBaGFGwBTUBlGG79YrqQqLi+E1cYZqi5H3AynIgYFVUeYR+Y3XioCAfMgyjh4DtwuTQlwU3pssYLSfYsFUpSd2jK0M709DTIMjzQkL0CDI4JgRXmk2JuiTZNHyIzjGCvLMVEPc1Bmp7UZIjyhA//IN9TnI9dd4R764kJK75DCg2tt5mKm4qabLWdx95isipeVbMbBbcIPoZkjvN4bHLWELIDT3fyi1e+D9pQH7ZdrX3rrOfb8K39VYX+wszyx9ZUFPe62x7EFsSCcWVueyC0ujGTrLuFI9NCmCYfAOT3tcOVkk+TCUchMVO1JBc7SZy93CmSaUYuDHtV7TFJZHI3uiCVOPrIzFKUu3LltOUL+2k5x55iagiCcITktixfg1DftO/mqfkGx5Gl/wm0QHpwl8/ZXOXpb9ZR9W6pUPeUTD+0abSK4TfdxHc3mjsVFudV8GV9dnOeb2r0km3t5JbKg1cbVQbLx3cdbg1cbVgdbx+dr0nzSkD/OGrzDsCPY+v/syy4RGRH2FR5LaOfdQ7Up/EZPr3v3evLh11W2Ht4JbVEd5LZ4QWXrH7wiNL/bAD4A7YwbC9D3Tevw48+Rj02aenkJn6Kqzpj9/rZVtSOFDXR3VIujtkruk/Aj5fVZVdNC58VRd4KKFtt07VUfs19n71GjvDv7matN5KIQxcc2+1UXNBFdzalkXr1ibKlSYojR4RHNZ2uc35d/KneZ4yyJiyYHqz5sOvN6oDiy9MOchJCEMe5mJeHNf59dJBzcEUniv7tCGAVzm+dvk8RIFXObX0JstLjceqljFx/dIj6Kn0RFUZN19RmxsxAlOItEexixJDD9ILmyXrrFuqaqQYZ0tpYzcXZL3arukc2z90yfGK5bFDApYHLA4o7acGpSoLz0wMko1bM1LMulnqtMJQeQemyTIK2xZCi4Q+rUBfPKB5ubqKsfWxNHjEjV1GpS3a15n0jtLm8+oXRu+dlBFfhsjeWkNVojmv3cR9xy1ovezWZKpLu5WGvp1Mu52MG2kYT4ETISzp9eTklyTprE27kaXc0su8Wus0s7xybNS2Jr2YucXWvnLgaSxKqammRK0ZzXuE0TzdrzLHseKQSpKUSv3ZSGqI65xqzrWTezWjvzcwbEtgl9unF57LVsTJ1z/FVI5vWz7+q935dx/XXQznnfdps2rgx51iam/1jf408K11oUZVg4zjX8+y5bhbk+Vf/fqj+hBc/qNXAKa1Xw9E/4wEkhKRW7NkZ8dx0XoeCKUa8w2YMMrLtmaXpbj7KBSUkkmQipLNpc+tR6q8kg3///R6V/7NbX3X3IrtljiIHoybkPjVLP+znCVNS0rCXfKMQ0oUsKmz5Ubbzqec2or2pYqkv2aDEpw2vAsvxcUDPIlh1kLvHd2Le8R8PunRLdFzWcH9TTx5kQyPzVzZqRgcROVL8M5vIc61KVKBsoS6x66dXcNU3165dqDK0weshHjvskkb0zvpeJv7qHGCN7b3wnQ+NHg575CD4Ur9HvytaMnsqfKWS31E6eSHjtJM1zqU1ja5y3lfJ+70NmR1nqW/3ceH5TbeBW8ihWyXMPrA/iSYamvPetVspJjQ2P5KH9Y9t7BMzsfz/8cwyxrWheF6Djg3htgJZPzi9vNWXkVNamtrFOtDSfU00MUTbKj0CvJgzPXnqId5LdtJ3uIPwT5jEUnQMIr7OSNgr/hTmMKFk8nj5Mj4Db7WTRgXC6idJA9ZwNS4/YKvupGn6Tyt5RC+6M/NWZ4+FgeHdqUT0oVZZGALUymsGX5o/4K+hxHPPNW2rhXzTsfzGvJKfboFBCmEQDDoAAPVOLB0N3UWiSCaSc07woSOABdJGRHzAwCvMSQYY4EMOoiReHUCSvLYMORaBBGBZACMbDi0CNSi8KShwGGkbngYHRfS8RjHgniWFFaC8OKUS3SRkGBph5MwVkCSXwFaygRZkJ6eY3/EKdJxZIEPP9YYiWFugiov4r3rhgGGKJWHSfkgIVaIYXWwSnicAFGlCk2qDcPZvItI8la0Hz5gZTQJYcvxLga0QraFGjp1vm/b9Q54mFih5/Iv5hiHbiQEdN20D7pkujHpfSPBbdkyhZgdU+0Ay8KBkno5QAVzzTgCLVmA7F7klDI6mmtJ5eme+28L7ci371gJSxHZfb4/X5EQ01VuXPNFz+LVt0Jcit3bXYUBbxmO4RFJtM0jYJ/ZGWx8yWRDihv/zVPGajyt3xNFtUh0EGu80GAAAA') format('woff2'), url('//at.alicdn.com/t/font_1662357_p4yoakpvlu.woff?t=1582880850246') format('woff'), url('//at.alicdn.com/t/font_1662357_p4yoakpvlu.ttf?t=1582880850246') format('truetype'), /* chrome, firefox, opera, Safari, Android, iOS 4.2+ */ url('//at.alicdn.com/t/font_1662357_p4yoakpvlu.svg?t=1582880850246#iconfont') format('svg');
+  /* iOS 4.1- */
+}
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+.iconzhifu:before {
+  content: "\e615";
+}
+.iconfenxiang-copy1:before {
+  content: "\e607";
+}
+.iconshoucang1:before {
+  content: "\e601";
+}
+.iconshouhuodizhi:before {
+  content: "\e602";
+}
+.iconfukuantongzhi:before {
+  content: "\e603";
+}
+.iconshoucang:before {
+  content: "\e609";
+}
+.iconkefu1:before {
+  content: "\e604";
+}
+.iconicon-:before {
+  content: "\e605";
+}
+.iconche1:before {
+  content: "\e606";
+}
+page {
+  padding-bottom: 90rpx;
+}
+.detail swiper {
+  background-color: #ccc;
+  margin: 0 auto;
+  width: 400rpx;
+  height: 400rpx;
+}
+.detail swiper swiper-item image {
+  width: 100%;
+}
+.price {
+  padding: 10rpx 0 10rpx 20rpx;
+  font-size: 38rpx;
+  color: var(--themeColor);
+}
+.product_title {
+  display: flex;
+  font-size: 26rpx;
+}
+.product_title .name {
+  flex: 5;
+  padding: 0 10rpx;
+  color: #333;
+  display: -webkit-box;
+  overflow: hidden;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+}
+.product_title .collect {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-left: 1px solid #000;
+  color: #333;
+}
+.product_title .collect .iconshoucang1 {
+  color: #f3b610;
+}
+.picdetail {
+  margin-top: 5rpx;
+  color: var(--themeColor);
+  font-size: 36rpx;
+  padding: 15rpx;
+  font-weight: 600;
+  border-top: 5px solid #eee;
+  border-bottom: 5px solid #eee;
+}
+.tool {
+  border-top: 1px solid #ccc;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 90rpx;
+  display: flex;
+}
+.tool .func_item {
+  position: relative;
+  background-color: #fff;
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.tool .func_item .iconfont {
+  color: #646464;
+}
+.tool .func_item .text {
+  font-size: 22rpx;
+}
+.tool .func_item button {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+}
+.tool .btn_add {
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  background-color: #ffa300;
+}
+.tool .btn_buy {
+  color: #fff;
+  flex: 2;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #f9544d;
+}

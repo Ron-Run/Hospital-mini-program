@@ -1,0 +1,179 @@
+/* pages/car/car.wxss */
+page {
+    padding-bottom: 90rpx;
+}
+
+.btn {
+    margin-top: 10rpx;
+
+    button {
+        width: 80%;
+    }
+}
+
+.userInfo {
+    border-top: 1px solid salmon;
+    display: flex;
+    color: #333;
+    padding: 20rpx;
+
+    .leftInfo {
+        flex: 5;
+
+        .name {}
+
+        .address {
+            width: 520rpx;
+
+            overflow: hidden;
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+    }
+
+    .rightInfo {
+        flex: 2;
+        text-align: right;
+    }
+}
+
+.buycar {
+    padding: 20rpx;
+    border-bottom: 1px solid rgb(240, 159, 159);
+    border-top: 1px solid rgb(240, 159, 159);
+    margin-top: 20rpx;
+    font-size: 30rpx;
+
+    title {}
+}
+.car_null{
+    display: flex;
+    justify-content: center;
+}
+.goods_info {
+    display: flex;
+    border-bottom: 1px solid #ccc;
+
+    .check {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .good_img {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+      
+            image {
+                width: 80%;
+            
+        }
+    }
+
+    .content {
+        padding: 10rpx 6rpx;
+        flex: 5;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        .good_name {
+            font-size: 24rpx;
+            display: -webkit-box;
+            overflow: hidden;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+        }
+
+        .price_num {
+            margin-top: 30rpx;
+            display: flex;
+            justify-content: space-between;
+
+            .price {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                font-size: 30rpx;
+                font-weight: 500;
+                color: var(--themeColor)
+            }
+
+            .num_wrap {
+                display: flex;
+
+                .dec,
+                .inc {
+                    border: 1px solid #ccc;
+                    width: 50rpx;
+                    height: 50rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+                .num {
+                    margin: 0 20rpx;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                }
+
+
+            }
+        }
+    }
+}
+
+.foot_tool {
+    background-color: #fff;
+    border-top: 1px solid #ccc;
+    position: fixed;
+    width: 100%;
+    height: 90rpx;
+    bottom: 0;
+    left: 0;
+    display: flex;
+
+    .check_all {
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .total_price {
+        padding-right: 10rpx;
+        text-align: right;
+        flex: 5;
+        font-size: 24rpx;
+        .pay_num {
+          
+            .total_pay {
+                font-size: 30rpx;
+                color: var(--themeColor);
+                font-weight: 600;
+            }
+        }
+
+        .transport {
+          
+        }
+
+        
+    }
+    .pay {
+        flex: 3;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: rgb(249, 84, 78);
+        color: #fff;
+        font-weight: 600;
+        font-size: 32rpx;
+    }
+}

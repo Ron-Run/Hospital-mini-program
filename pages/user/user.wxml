@@ -1,0 +1,16 @@
+<view class="img_wrap">
+    <view class="pic_bg" wx:if="{{userInfo.avatarUrl}}">
+        <view class="bgimg">
+            <image src="{{userInfo.avatarUrl}}" />
+        </view>
+        <view class="smallpic">
+            <view class="img">
+                <image src="{{userInfo.avatarUrl}}" />
+            </view>
+            <view class="name">{{ userInfo.nickName }}</view>
+        </view>
+    </view>
+    <view class="btn" wx:else>
+        <navigator url="../../pages/login/login">登 录</navigator>
+    </view>
+</view>

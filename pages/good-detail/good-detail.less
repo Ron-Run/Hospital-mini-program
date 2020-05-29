@@ -1,0 +1,121 @@
+/* pages/good-detail/good-detail.wxss */
+@import "../../styles/iconfont.wxss";
+page{
+    padding-bottom: 90rpx;
+}
+.detail{
+   
+    swiper{
+        background-color: #ccc;
+       margin: 0 auto;
+        width: 400rpx;
+        height: 400rpx;
+        swiper-item{
+          
+            image{
+                width: 100%;
+            }
+        }
+    }
+}
+.price{
+    padding: 10rpx 0 10rpx 20rpx;
+    font-size: 38rpx;
+    color: var(--themeColor)
+}
+.product_title{
+    display: flex;
+    font-size: 26rpx;
+    .name{
+        flex: 5;
+        padding: 0 10rpx;
+        color: #333;
+        display: -webkit-box;
+        overflow: hidden;
+        -webkit-box-orient: vertical;
+        -webkit-line-clamp:2;
+    }
+    .collect{
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        border-left: 1px solid #000;
+        color: #333;
+        .iconfont{
+           
+        }
+        .iconshoucang1{
+            color: rgb(243, 182, 16)
+        }
+        .text{
+
+        }
+    }
+
+}
+.picdetail
+{
+    margin-top: 5rpx;
+   color: var(--themeColor);
+   font-size: 36rpx;
+    padding: 15rpx;
+    font-weight: 600;
+    border-top: 5px solid #eee;
+    border-bottom: 5px solid #eee;
+}
+.tool{
+    border-top: 1px solid #ccc;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 90rpx;
+    display: flex;
+    .func_item{
+        position: relative;
+        background-color: #fff;
+        flex: 1;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        .iconfont{
+            color: rgb(100, 100, 100);
+        }
+        .text{
+            font-size: 22rpx;
+        }
+        button{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            opacity: 0;
+        }
+    }
+    .btn_add{
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        color: #fff;
+        background-color: #ffa300;
+        .text{
+
+        }
+    }
+    .btn_buy{
+        color: #fff;
+        flex: 2;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: #f9544d;
+        .text{
+
+        }
+    }
+}

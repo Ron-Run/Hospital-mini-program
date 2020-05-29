@@ -1,0 +1,50 @@
+text {
+  color: var(--themeColor);
+  font-size: 28rpx;
+}
+.swiper-content swiper {
+  width: 750rpx;
+  height: 340rpx;
+}
+.swiper-content swiper .swiper-img {
+  width: 100%;
+}
+.nav {
+  display: flex;
+}
+.nav navigator {
+  flex: 1;
+  padding: 20rpx;
+}
+.nav navigator image {
+  width: 100%;
+}
+.floor .floor_title {
+  overflow: hidden;
+  padding: 10rpx 0;
+}
+.floor .floor_title image {
+  width: 100%;
+}
+.floor .floor_title .pic_wrap {
+  overflow: hidden;
+}
+.floor .floor_title .pic_wrap navigator {
+  float: left;
+  width: 33.33%;
+  height: 190rpx;
+}
+.floor .floor_title .pic_wrap navigator:first-child {
+  height: 380rpx;
+}
+.floor .floor_title .pic_wrap navigator:nth-child(-n+5) {
+  border-right: 6rpx solid #fff;
+}
+.floor .floor_title .pic_wrap navigator:nth-child(2),
+.floor .floor_title .pic_wrap navigator:nth-child(3) {
+  border-bottom: 6rpx solid #fff;
+}
+.floor .floor_title .pic_wrap navigator image {
+  width: 100%;
+  height: 100%;
+}

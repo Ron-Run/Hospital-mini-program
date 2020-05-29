@@ -1,0 +1,22 @@
+<view class="cate">
+    <searchBox></searchBox>
+<view class="container">
+    <scroll-view class="left" scroll-y>
+        <view class="item {{currentIndex===index? 'active':''}}" bindtap="handleTap" data-index="{{index}}" wx:key="*this" wx:for="{{leftCategory}}">
+            {{item}}
+        </view>
+    </scroll-view>
+    <scroll-view scroll-top="{{ location }}" class="right" scroll-y="{{true}}">
+       <view class="item" wx:for-item="item1" wx:for-index="index1" wx:key="cat_id" wx:for="{{rightCategory}}">
+           <view class="title">/ {{item1.cat_name}} /</view> 
+           <view class="detail">
+               <navigator url="../good-list/good-list?cid={{item.cat_id}}" wx:key="cat_name" wx:for="{{item1.children}}">
+                   <image mode="widthFix" src="{{ item.cat_icon }}" />
+                   <text>{{ item.cat_name }}</text>
+               </navigator>
+                 
+           </view>
+        </view>
+    </scroll-view>
+</view>
+</view>

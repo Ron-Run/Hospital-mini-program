@@ -1,0 +1,53 @@
+.img_wrap {
+
+    .pic_bg {
+        height: 45vm;
+        position: relative;
+
+        .bgimg {
+            image {
+                width: 100%;
+                filter: blur(5px);
+            }
+        }
+
+        .smallpic {
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+            top: 30%;
+            text-align: center;
+
+            .img {
+                image {
+                    width: 150rpx;
+                    height: 150rpx;
+                    border-radius: 50%;
+                }
+            }
+
+            .name {
+                color: #fff;
+            }
+        }
+    }
+
+    .btn {
+        height: 45vm;
+        width: 100%;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 20rpx;
+        background-color: var(--themeColor);
+        navigator{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 300rpx;
+            height: 100rpx;
+            border: 1px solid lightblue;
+        }
+    }
+}

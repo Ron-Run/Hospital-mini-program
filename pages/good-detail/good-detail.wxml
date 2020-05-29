@@ -1,0 +1,47 @@
+<view class="detail">
+    <swiper interval="3000" indicator-dots="{{true}}" autoplay="{{true}}" indicator-color="#ccc" circular="{{true}}" indicator-active-color="#f40">
+        <swiper-item wx:for="{{detailObj.pics}}" wx:key="pics_id" bindtap="scaleImage" data-url="{{item.pics_mid}}">
+            <image src="{{item.pics_mid}}" mode="widthFix" />
+        </swiper-item>
+    </swiper>
+</view>
+<view class="price">
+    <text>￥{{detailObj.goods_price}}</text>
+</view>
+<view class="product_title">
+    <view class="name">{{detailObj.goods_name}}</view>
+    <view class="collect">
+        <view class="iconfont {{ isActive?'iconshoucang1':'iconshoucang' }}" bindtap="collection"></view>
+        <view class="text">收藏</view>
+    </view>
+</view>
+<view class="picdetail">
+    <text>图文详情</text>
+</view>
+<view class="goods_introduce">
+    <rich-text nodes="{{detailObj.goods_introduce}}"></rich-text>
+</view>
+<view class="tool">
+    <view class="func_item">
+        <view class="iconfont iconkefu1"></view>
+        <view class="text">联系客服</view>
+        <button open-type="contact"></button>
+    </view>
+    <view class="func_item">
+        <view class="iconfont iconfenxiang-copy1"></view>
+        <view class="text">分享</view>
+        <button open-type="share"></button>
+    </view>
+    <navigator open-type="switchTab" url="../../pages/car/car" class="func_item">
+        <view class="iconfont iconche1"></view>
+        <view class="text">购物车</view>
+    </navigator>
+    <view class="btn_add">
+        
+        <view class="text" bindtap="addToCar">加入购物车</view>
+    </view>
+    <view class="btn_buy">
+        
+        <view class="text">立即购买</view>
+    </view>
+</view>
